@@ -487,8 +487,8 @@ PRODUCT_PACKAGES += \
     misound_res \
     misound_res_headphone \
     misound_res_spk \
-    HotwordEnrollmentOKGoogleHEXAGON \
-    HotwordEnrollmentXGoogleHEXAGON \
+    HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND \
+    HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
     com.android.hotwordenrollment.common.util \
     batterysecret \
     hvdcp_opti \

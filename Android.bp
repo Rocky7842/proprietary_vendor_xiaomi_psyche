@@ -6659,6 +6659,34 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libxmi_high_dynamic_range_cdsp",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libxmi_high_dynamic_range_cdsp.so",
+            ],
+            shared_libs: [
+                "libcdsprpc",
+                "libOpenCL",
+                "liblog",
+                "libc++_shared",
+                "libmialgo_utils",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "sensors.elliptic",
     owner: "xiaomi",
     strip: {
@@ -7012,6 +7040,24 @@ prebuilt_rfsa {
     filename: "libhexagon_nn_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libhexagon_nn_skel.so",
+    relative_install_path: "adsp",
+    soc_specific: true,
+}
+
+prebuilt_rfsa {
+    name: "libmialgo_basic_cdsp_skel",
+    filename: "libmialgo_basic_cdsp_skel.so",
+    owner: "xiaomi",
+    src: "proprietary/vendor/lib/rfsa/adsp/libmialgo_basic_cdsp_skel.so",
+    relative_install_path: "adsp",
+    soc_specific: true,
+}
+
+prebuilt_rfsa {
+    name: "libmialgo_ldc_cdsp_skel",
+    filename: "libmialgo_ldc_cdsp_skel.so",
+    owner: "xiaomi",
+    src: "proprietary/vendor/lib/rfsa/adsp/libmialgo_ldc_cdsp_skel.so",
     relative_install_path: "adsp",
     soc_specific: true,
 }

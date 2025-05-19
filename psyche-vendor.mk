@@ -446,6 +446,7 @@ PRODUCT_PACKAGES += \
     libvidhance \
     libxmi_hdr_checker \
     libxmi_high_dynamic_range \
+    libxmi_high_dynamic_range_cdsp \
     sensors.elliptic \
     sensors.mius.proximity \
     sensors.ssc \
@@ -471,6 +472,8 @@ PRODUCT_PACKAGES += \
     libfastcvdsp_skel \
     libfrc_mobilenet \
     libhexagon_nn_skel \
+    libmialgo_basic_cdsp_skel \
+    libmialgo_ldc_cdsp_skel \
     libmialgo_rfs_cdsp_skel \
     libmobilenet_dsp \
     libremosaichvx_skel \

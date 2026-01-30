@@ -99,6 +99,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/psyche/proprietary/vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc \
     vendor/xiaomi/psyche/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/xiaomi/psyche/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
+    vendor/xiaomi/psyche/proprietary/vendor/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc \
     vendor/xiaomi/psyche/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/xiaomi/psyche/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
     vendor/xiaomi/psyche/proprietary/vendor/etc/sensors/calibratedCheck.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/calibratedCheck.json \
@@ -332,6 +333,7 @@ PRODUCT_PACKAGES += \
     com.qti.chi.override \
     fingerprint.goodix_fod.default \
     vendor.qti.hardware.sensorscalibrate@1.0-impl \
+    vendor.xiaomi.hardware.citsensorservice@1.1-impl \
     libHalSuperSensorServer \
     libMIAIHDRhvx_interface \
     libSNPE \
@@ -431,6 +433,7 @@ PRODUCT_PACKAGES += \
     libsnsdiaglog \
     libssc \
     libssc_default_listener \
+    libssccalapi \
     libst_soft_isp_calc_exposure_shared \
     libst_soft_isp_shared \
     libswregistrationalgo \
@@ -452,6 +455,8 @@ PRODUCT_PACKAGES += \
     sensors.touch \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
     vendor.qti.hardware.sensorscalibrate@1.0 \
+    vendor.xiaomi.hardware.citsensorservice@1.0 \
+    vendor.xiaomi.hardware.citsensorservice@1.1 \
     vendor_lib_rfsa_adsp_capi_v2_cirrus_sp_so \
     vendor_lib_rfsa_adsp_capi_v2_dap_cpdp_so \
     vendor_lib_rfsa_adsp_hrtf5c_bin \
@@ -496,6 +501,7 @@ PRODUCT_PACKAGES += \
     batterysecret \
     hvdcp_opti \
     vendor.qti.hardware.sensorscalibrate@1.0-service \
+    vendor.xiaomi.hardware.citsensorservice@1.1-service \
     init.qcom.sensors \
     init.qti.chg_policy \
     sensors.qti \

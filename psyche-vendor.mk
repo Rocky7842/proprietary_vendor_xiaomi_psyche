@@ -226,17 +226,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/psyche/proprietary/vendor/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp_RF.conf
 
 PRODUCT_PACKAGES += \
-    audio.primary.psyche \
-    liba2dpoffload_psyche \
-    libaudio_log_utils \
-    libaudiocloudctrl \
-    libaudioconfigstore \
-    libaudioparsers \
-    libaudioroute_ext \
-    libhdmipassthru \
-    libresampler \
-    vendor.qti.hardware.audiohalext@1.0 \
-    libxlog \
     com.qti.actuator.psyche_sunny_s5k5e9yx04_dw9800_macro_actuator \
     com.qti.eeprom.psyche_ofilm_ov13b10_p24c64f_ultra_wide_eeprom \
     com.qti.eeprom.psyche_ofilm_ov32b40_p24c64f_front_eeprom \
